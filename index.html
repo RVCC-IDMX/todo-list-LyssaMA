@@ -18,15 +18,9 @@
 
     <div class="all-tasks">
       <h2 class="task-list-title">My lists</h2>
-      <ul class="task-list" data-lists>
+      <ul class="task-list" data-lists></ul>
 
-      <li><button class="btn list-btn" data-list="one">one</button></li>
-      <li><button class="btn list-btn" data-list="two">two</button></li>
-      <li><button class="btn list-btn" data-list="one">asdfasdf</button></li>
-      <li><button class="btn list-btn" data-list="two">asdfasdf</button></li>
-    </ul>
-
-      <form action="">
+      <form action="" data-new-list-form>
         <input 
           type="text"
           class="new list"
@@ -40,14 +34,12 @@
 
     <div class="todo-list" data-list-display-container>
       <div class="todo-header">
-        <h2 class="list-title" data-list-title>asdfasdf</h2>
+        <h2 class="list-title" data-list-title>YouTube</h2>
         <p class="task-count" data-list-count>3 tasks remaining</p>
       </div>
 
       <div class="todo-body">
-        <div class="tasks" data-tasks>
-          
-        </div>
+        <div class="tasks" data-tasks></div>
 
         <div class="new-task-creator">
             <form action="" data-new-task-form>
@@ -67,17 +59,17 @@
           <button class="btn delete" data-delete-list-button>Delete list</button>
         </div>
       </div>
-
-      <p class="empty-message" style="display: none;">No tasks remaining</p>
     </div>
 
-<template id ="task-template">
-  <div class="task">
-    <input type="checkbox"/>
-    <label>
-      <span class="custom-checkbox"></span>
-    </label>
-  </div>
-</template
+   
+    </div>
+    <template id="task-template">
+      <div class="task">
+        <input type="checkbox" />
+        <label>
+          <span class="custom-checkbox"></span>
+        </label>
+      </div>
+    </template>
   </body>
 </html>
